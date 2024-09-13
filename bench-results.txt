@@ -1,0 +1,36 @@
+running 7 tests (rayon = 1.10.0)
+test bench_flat_map_huge_par_iter            ... bench:   1,059,967.10 ns/iter (+/- 413,027.95)
+test bench_flat_map_iter_with_arr            ... bench:   2,328,238.50 ns/iter (+/- 921,022.52)
+test bench_flat_map_iter_with_iter           ... bench:   3,095,439.73 ns/iter (+/- 575,730.17)
+test bench_flat_map_perfect_par_iter         ... bench:  10,421,737.30 ns/iter (+/- 85,131.61)
+test bench_flat_map_perfect_perfect_par_iter ... bench: 121,471,321.20 ns/iter (+/- 254,984.40)
+test bench_flat_map_with_arr                 ... bench: 436,366,806.00 ns/iter (+/- 588,123,269.38)
+test bench_flat_map_with_iter                ... bench: 672,736,025.30 ns/iter (+/- 645,309,288.25)
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 7 measured; 0 filtered out; finished in 407.55s
+
+
+
+running 7 tests (rayon = const_length)
+test bench_flat_map_huge_par_iter            ... bench:     880,466.80 ns/iter (+/- 858,953.41)
+test bench_flat_map_iter_with_arr            ... bench:   2,156,418.08 ns/iter (+/- 280,153.63)
+test bench_flat_map_iter_with_iter           ... bench:   3,037,485.65 ns/iter (+/- 531,166.35)
+test bench_flat_map_perfect_par_iter         ... bench:  10,413,888.90 ns/iter (+/- 57,150.64)
+test bench_flat_map_perfect_perfect_par_iter ... bench: 121,456,608.90 ns/iter (+/- 213,907.57)
+test bench_flat_map_with_arr                 ... bench: 181,696,115.80 ns/iter (+/- 484,308,029.15)
+test bench_flat_map_with_iter                ... bench: 504,883,823.30 ns/iter (+/- 456,548,331.29)
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 7 measured; 0 filtered out; finished in 263.69s
+
+
+
+running 7 tests (rayon = stop_split)
+test bench_flat_map_huge_par_iter            ... bench:   3,640,242.65 ns/iter (+/- 318,623.52)
+test bench_flat_map_iter_with_arr            ... bench:   2,534,123.65 ns/iter (+/- 1,396,671.40)
+test bench_flat_map_iter_with_iter           ... bench:   3,091,596.25 ns/iter (+/- 696,212.88)
+test bench_flat_map_perfect_par_iter         ... bench: 120,871,352.70 ns/iter (+/- 83,568.48)
+test bench_flat_map_perfect_perfect_par_iter ... bench: 121,190,672.40 ns/iter (+/- 97,085.82)
+test bench_flat_map_with_arr                 ... bench:   1,170,220.98 ns/iter (+/- 386,313.92)
+test bench_flat_map_with_iter                ... bench:  80,164,504.10 ns/iter (+/- 40,407,455.05)
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 7 measured; 0 filtered out; finished in 112.45s
